@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         IdleRPG - Jaan Scripts
+// @name         IdleRPG - XP Per Hour
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
 // @description  Show XP/H on actions
