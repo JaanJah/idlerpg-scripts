@@ -7,6 +7,7 @@
 // @match        https://idle.vidski.dev/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=vidski.dev
 // @grant        none
+// @license      MIT
 // ==/UserScript==
 
 const ONE_HOUR_SECONDS = 60 * 60;
