@@ -18,14 +18,20 @@ const TABLE_ELEMENTS_SELECTOR = ".data-\\[state\\=selected\\]\\:bg-muted";
         let actions = document.querySelectorAll(TABLE_ELEMENTS_SELECTOR);
         actions.forEach((action) => {
             let tdElements = action.querySelectorAll("td");
-            // Since query selector includes object that we don't want to monitor, skip elements with length 3
-            // These are the elements under rewards
-            if (tdElements.length === 3) {
-                return
+            // Since query selector includes object that we don't want to monitor, skip elements with length under 3
+            // These are the elements under rewards and leaderboard
+            if (tdElements.length <= 3) {
+                return;
             }
+            console.log(tdElements.length);
+            console.log(tdElements);
             const xp = tdElements[1].innerText.split(' ')[0]
             const time = tdElements[2].innerText.slice(0, -1);
             const xph = (ONE_HOUR_SECONDS / time * xp);
+
+            if (Number.isNaN(xph)) {
+                return;
+            }
 
             const xphSpan = document.createElement("span");
             xphSpan.className = "flex";
