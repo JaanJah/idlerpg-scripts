@@ -25,7 +25,7 @@ const TABLE_ELEMENTS_SELECTOR = ".data-\\[state\\=selected\\]\\:bg-muted";
             }
             console.log(tdElements.length);
             console.log(tdElements);
-            const xp = tdElements[1].innerText.split(' ')[0]
+            const xp = tdElements[1].innerText.split(' ')[0];
             const time = tdElements[2].innerText.slice(0, -1);
             const xph = (ONE_HOUR_SECONDS / time * xp);
 
@@ -55,9 +55,7 @@ const TABLE_ELEMENTS_SELECTOR = ".data-\\[state\\=selected\\]\\:bg-muted";
                     }
                 });
             });
-        });
-
-        observer.observe(root, { childList: true });
+        }).observe(root, { childList: true });
     }
     // In skills with multiple selections (like Smithing), we need to recalculate values
     // every time the selection changes
@@ -85,8 +83,7 @@ const TABLE_ELEMENTS_SELECTOR = ".data-\\[state\\=selected\\]\\:bg-muted";
                     generateXPH();
                 }
             }
-        });
-        observer.observe(document.body, { childList: true, subtree: true });
+        }).observe(document.body, { childList: true, subtree: true });
         previousElements = document.querySelectorAll(TABLE_ELEMENTS_SELECTOR);
     }
 
