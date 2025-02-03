@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         IdleRPG - XP Per Hour
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Show XP/H on actions
 // @author       jaan
 // @match        https://idle.vidski.dev/*
