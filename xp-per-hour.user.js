@@ -8,6 +8,8 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=vidski.dev
 // @grant        none
 // @license      MIT
+// @downloadURL  https://update.greasyfork.org/scripts/525682/IdleRPG%20-%20XP%20Per%20Hour.user.js
+// @updateURL    https://update.greasyfork.org/scripts/525682/IdleRPG%20-%20XP%20Per%20Hour.meta.js
 // ==/UserScript==
 
 const ONE_HOUR_SECONDS = 60 * 60;
