@@ -25,8 +25,7 @@ const TABLE_ELEMENTS_SELECTOR = ".data-\\[state\\=selected\\]\\:bg-muted";
             if (tdElements.length <= 3) {
                 return;
             }
-            console.log(tdElements.length);
-            console.log(tdElements);
+
             const xp = tdElements[1].innerText.split(' ')[0];
             const time = tdElements[2].innerText.slice(0, -1);
             const xph = (ONE_HOUR_SECONDS / time * xp);
